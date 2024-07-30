@@ -1,6 +1,6 @@
 "use strict";
 
-const homePage = async (req, res) => {
+const homepage = async (req, res) => {
   console.log("This is home page");
   const locals = {
     title: "NodeJs Notes",
@@ -12,7 +12,7 @@ const homePage = async (req, res) => {
   });
 };
 
-const aboutPage = async (req, res) => {
+const about = async (req, res) => {
   try {
     console.log("This is about page");
     const locals = {
@@ -25,4 +25,4 @@ const aboutPage = async (req, res) => {
   }
 };
 
-module.exports = { homePage, aboutPage };
+module.exports = { homepage, about };
